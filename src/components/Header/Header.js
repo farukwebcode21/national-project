@@ -12,8 +12,8 @@ import Button from '@mui/material/Button';
 const Header = () => {
   return (
     <Container>
-      <Box sx={{ alignItems: 'flex-start' }}>
-      <AppBar position="static">
+      <Box sx={{ alignItems: 'flex-start'}}>
+      <AppBar style={{ background: '#808080' }} position="static">
         <Toolbar>
           <Typography variant="h7" component="div" sx={{ flexGrow: 1 }}>
               Bangladesh National Portal
