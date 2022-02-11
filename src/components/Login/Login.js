@@ -4,6 +4,7 @@ import login_logo from '../../images/logo.png';
 import login_bottom from '../../images/login_bottom.png';
 import Typography from '@mui/material/Typography';
 import { Link, NavLink } from 'react-router-dom';
+import './login.css';
 
 
 const Login = () => {
@@ -18,9 +19,9 @@ const Login = () => {
             <img style={{width:'75%'}} src={login_logo} alt=""/>
         </Grid>
         <Grid item xs={12} md={4} sx={{mt:20}}>
-        <Typography variant="h5" gutterBottom>Welcome</Typography>
-        <Typography variant="body1" gutterBottom>Digital Dashboard</Typography>
-          <form onSubmit={handleLoginSubmit}>
+        <Typography className='welcome' variant="h5" gutterBottom>Welcome</Typography>
+        <Typography className='digital_dashboard' variant="body1" gutterBottom>Digital Dashboard</Typography>
+          <form className='loginform' onSubmit={handleLoginSubmit}>
           <TextField 
             sx={{width:'75%', m:1}}
             id="standard-basic"
@@ -32,7 +33,7 @@ const Login = () => {
             label="password" 
             type="password"
             variant="standard" />
-            <Button variant="contained">Sign In</Button><br></br>
+            <Button className='signIn' variant="contained">Sign In</Button><br></br>
             <Link to="/register"><Button size="small" variant="text">Don't have any account ? Sign Up</Button></Link>
           </form>
         </Grid>

@@ -18,9 +18,9 @@ const Register = () => {
             <img style={{width:'75%'}} src={login_logo} alt=""/>
         </Grid>
         <Grid item xs={12} md={4} sx={{mt:20}}>
-        <Typography variant="h5" gutterBottom>Welcome</Typography>
-        <Typography variant="body1" gutterBottom>Digital Dashboard</Typography>
-          <form onSubmit={handleLoginSubmit}>
+        <Typography className='welcome' variant="h5" gutterBottom>Welcome</Typography>
+        <Typography className='digital_dashboard' variant="body1" gutterBottom>Digital Dashboard</Typography>
+          <form className='loginform' onSubmit={handleLoginSubmit}>
           <TextField 
             sx={{width:'75%', m:1}}
             id="standard-basic"

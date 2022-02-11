@@ -7,8 +7,6 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 
-
-
 const Header = () => {
   return (
     <Container>
@@ -18,8 +16,8 @@ const Header = () => {
           <Typography variant="h7" component="div" sx={{ flexGrow: 1 }}>
               Bangladesh National Portal
           </Typography>
-          <Button color="inherit">Bangla</Button>
-          <Button color="inherit">English</Button>
+          <Button  color="inherit">Bangla</Button>
+          <Button  color="inherit">English</Button>
         </Toolbar>
       </AppBar>
       </Box>
